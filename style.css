@@ -1,0 +1,117 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #111729;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      padding: 2rem;
+      border-radius: 16px;
+      background-color: #1e2a47;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .card {
+      text-align: center;
+    }
+
+    .card h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #f2f2f2;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #aaa;
+      margin-bottom: 2rem;
+    }
+
+    #get-started {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: #4c7df2;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #get-started:hover {
+      background-color: #355ec9;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #4c7df2;
+      padding-bottom: 0.5rem;
+    }
+
+    .info p {
+      margin-bottom: 0.5rem;
+      color: #d3d3d3;
+    }
+
+    #map-frame iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    #search {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    #post-offices {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .post-office-card {
+      background-color: #273657;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .post-office-card p {
+      color: #f1f1f1;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      #post-offices {
+        grid-template-columns: 1fr;
+      }
+    }
